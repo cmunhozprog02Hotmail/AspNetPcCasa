@@ -13,6 +13,7 @@
         <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ASPNETDevMedia.SampleDataContext" EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" TableName="Pessoas">
         </asp:LinqDataSource>
         <br />
+
         <br />
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="idPessoa" DataSourceID="LinqDataSource1" GroupItemCount="3" InsertItemPosition="LastItem">
             <AlternatingItemTemplate>
