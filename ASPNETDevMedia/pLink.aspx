@@ -10,8 +10,13 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ASPNETDevMedia.SampleDataContext" EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" TableName="Pessoas">
+        <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="ASPNETDevMedia.SampleDataContext" EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" TableName="Pessoas" AutoGenerateWhereClause="True">
+            <WhereParameters>
+                <asp:ControlParameter ControlID="txtSearch" Name="nome" PropertyName="Text" Type="String" />
+            </WhereParameters>
         </asp:LinqDataSource>
+        <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSearch" runat="server" OnClick="btnSearch_Click" Text="OK" />
         <br />
 
         <br />
