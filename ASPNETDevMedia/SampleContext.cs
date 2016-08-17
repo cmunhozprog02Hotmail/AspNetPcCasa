@@ -17,7 +17,12 @@ namespace ASPNETDevMedia
 
         public IQueryable<Pessoa> GetPessoas(string search)
         {
-            return GetPessoas().Where(p => p.nome.Contains(search));
+            IQueryable<Pessoa> iqPessoa = GetPessoas().AsQueryable<Pessoa>();
+            if (search != null)
+                iqPessoa = iqPessoa.Where(p => p.nome.Contains(search));
+
+            return iqPessoa;
+
         }
     }
 }
