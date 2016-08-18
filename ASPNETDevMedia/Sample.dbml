@@ -12,6 +12,7 @@
       <Column Name="idPessoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="nome" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
       <Column Name="telefone" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="obs" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

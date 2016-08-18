@@ -207,6 +207,8 @@ namespace ASPNETDevMedia
 		
 		private string _telefone;
 		
+		private string _obs;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -217,6 +219,8 @@ namespace ASPNETDevMedia
     partial void OnnomeChanged();
     partial void OntelefoneChanging(string value);
     partial void OntelefoneChanged();
+    partial void OnobsChanging(string value);
+    partial void OnobsChanged();
     #endregion
 		
 		public Pessoa()
@@ -280,6 +284,26 @@ namespace ASPNETDevMedia
 					this._telefone = value;
 					this.SendPropertyChanged("telefone");
 					this.OntelefoneChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_obs", DbType="NVarChar(300)")]
+		public string obs
+		{
+			get
+			{
+				return this._obs;
+			}
+			set
+			{
+				if ((this._obs != value))
+				{
+					this.OnobsChanging(value);
+					this.SendPropertyChanging();
+					this._obs = value;
+					this.SendPropertyChanged("obs");
+					this.OnobsChanged();
 				}
 			}
 		}

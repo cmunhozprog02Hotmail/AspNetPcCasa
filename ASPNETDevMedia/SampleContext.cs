@@ -24,5 +24,11 @@ namespace ASPNETDevMedia
             return iqPessoa;
 
         }
+        public void AddPessoa(Pessoa p)
+        {
+            sdc.Pessoas.InsertOnSubmit(p);
+            sdc.SubmitChanges();
+            
+        }
     }
 }
