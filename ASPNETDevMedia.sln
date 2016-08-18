@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETDevMedia", "ASPNETDevMedia\ASPNETDevMedia.csproj", "{5BC074DC-8FBC-464C-A542-14C183915E49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETSAMPLO03", "ASPNETSAMPLO03\ASPNETSAMPLO03.csproj", "{307A16B8-062A-44EA-99E6-C3151F15B6F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5BC074DC-8FBC-464C-A542-14C183915E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BC074DC-8FBC-464C-A542-14C183915E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC074DC-8FBC-464C-A542-14C183915E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
