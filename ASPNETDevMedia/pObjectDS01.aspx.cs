@@ -18,5 +18,21 @@ namespace ASPNETDevMedia
         {
             ODS01.DataBind();
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FVPessoa.ChangeMode(FormViewMode.Edit);
+            FVPessoa.DataBind();
+        }
+
+        protected void FVPessoa_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
+        {
+            gvPessoa.DataBind();
+        }
+
+        protected void FVPessoa_ItemInserted(object sender, FormViewInsertedEventArgs e)
+        {
+            gvPessoa.DataBind();
+        }
     }
 }

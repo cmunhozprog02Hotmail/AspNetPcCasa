@@ -37,5 +37,18 @@ namespace ASPNETDevMedia
             sdc.Pessoas.DeleteOnSubmit(p);
             sdc.SubmitChanges();
         }
+        public Pessoa GetPessoa(int idPessoa)
+        {
+            Pessoa p = sdc.Pessoas.SingleOrDefault(q => q.idPessoa.Equals(idPessoa));
+            return p;
+        }
+        public void Update(Pessoa p)
+        {
+            Pessoa context = sdc.Pessoas.SingleOrDefault(q => q.idPessoa.Equals(p.idPessoa));
+            context.nome = p.nome;
+            context.telefone = p.telefone;
+            context.obs = p.obs;
+            sdc.SubmitChanges();
+        }
     }
 }

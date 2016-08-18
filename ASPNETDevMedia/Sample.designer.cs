@@ -114,7 +114,7 @@ namespace ASPNETDevMedia
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCidade", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCidade", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true, UpdateCheck=UpdateCheck.Never)]
 		public int idCidade
 		{
 			get
@@ -134,7 +134,7 @@ namespace ASPNETDevMedia
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descricao", DbType="NVarChar(350) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descricao", DbType="NVarChar(350) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
 		public string descricao
 		{
 			get
@@ -154,7 +154,7 @@ namespace ASPNETDevMedia
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sigla", DbType="NVarChar(3) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sigla", DbType="NVarChar(3) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
 		public string sigla
 		{
 			get
@@ -228,7 +228,7 @@ namespace ASPNETDevMedia
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPessoa", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPessoa", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true, UpdateCheck=UpdateCheck.Never)]
 		public int idPessoa
 		{
 			get
@@ -248,7 +248,7 @@ namespace ASPNETDevMedia
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nome", DbType="NVarChar(300) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nome", DbType="NVarChar(300) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
 		public string nome
 		{
 			get
@@ -268,7 +268,7 @@ namespace ASPNETDevMedia
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefone", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telefone", DbType="NVarChar(20) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
 		public string telefone
 		{
 			get
@@ -288,7 +288,7 @@ namespace ASPNETDevMedia
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_obs", DbType="NVarChar(300)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_obs", DbType="NVarChar(300)", UpdateCheck=UpdateCheck.Never)]
 		public string obs
 		{
 			get
