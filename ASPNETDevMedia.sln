@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETDevMedia", "ASPNETDev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETSAMPLO03", "ASPNETSAMPLO03\ASPNETSAMPLO03.csproj", "{307A16B8-062A-44EA-99E6-C3151F15B6F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETSample03", "ASPNETSample03\ASPNETSample03.csproj", "{21F4B1EB-4765-41D1-8A01-163DD9D93459}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{307A16B8-062A-44EA-99E6-C3151F15B6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F4B1EB-4765-41D1-8A01-163DD9D93459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F4B1EB-4765-41D1-8A01-163DD9D93459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F4B1EB-4765-41D1-8A01-163DD9D93459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F4B1EB-4765-41D1-8A01-163DD9D93459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
