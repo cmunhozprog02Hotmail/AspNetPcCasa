@@ -17,7 +17,7 @@
             DataSourceID="ODS01" DataKeyNames="idPessoa" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="idPessoa" HeaderText="idPessoa" SortExpression="idPessoa" />
-                <asp:BoundField DataField="nome" HeaderText="nome" SortExpression="nome" />
+                <asp:BoundField DataField="nome" HeaderText="Nome" SortExpression="nome" />
                 <asp:BoundField DataField="telefone" HeaderText="telefone" SortExpression="telefone" />
                 <asp:BoundField DataField="obs" HeaderText="Obs." SortExpression="obs" />
                 <asp:CommandField ShowSelectButton="true" />
